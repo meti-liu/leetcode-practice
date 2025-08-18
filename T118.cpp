@@ -7,6 +7,7 @@ Example 2:
 
 Input: numRows = 1
 Output: [[1]]
+是一个动态规划DP问题
 */
 #include<iostream>
 #include<vector>
@@ -25,15 +26,6 @@ int main()
     for(int i=1;i<n;i++)
     for(int j=1;i+j<n;j++) a[i][j]=a[i-1][j]+a[i][j-1];
     
-
-    // for (int i = 0; i < n; i++) 
-    // {
-    //     for (int j = 0; j < n; j++) 
-    //     {
-    //         cout << a[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
 
     string s;
     s+="[";
